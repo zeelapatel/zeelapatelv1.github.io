@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="images\favicon.png" type="image/x-icon">
+
+    <title>Portfolio | Ludiflex</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+    <nav id="header">
+        <div class="nav-logo">
+            <div class="logo-img-nav">    
+                <img src="images\5906160.png" alt="avatar">
+            </div>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#experience-box" class="nav-link">Experience</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#recomendation" class="nav-link">Recomendation</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+    
+    <div id="connect-message" class="connect-message">
+        <span>Let's connect!</span>
+        <i class="uil uil-arrow-down"></i>
+    </div>
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Zeel Patel</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Experienced developer proficient in backend, frontend, and data science, dedicated to crafting visually captivating and intuitive websites.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <a href="https://drive.google.com/file/d/10chXcFG5ZMLD4Z6yDsldq6kGDNvaylfv/view?usp=sharing" download target="_blank">
+                    <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                </a>
+            </div>
+            <div class="social_icons">
+                <div class="icon">
+                    <a href="https://www.instagram.com/your_username" target="_blank">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/zeelapatel/" target="_blank">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="icon">
+                    <a href="https://github.com/zeelapatel" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="images\light-blue-background-designify (1).png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>I am currently pursuing my Master's in Software Engineering Systems at Northeastern University, where I've maintained a GPA of 4.0. My academic journey is anchored in a solid foundation of Object-Oriented Design, Data Science Engineering Methods, and Database Management. I also hold a Bachelor's degree in Computer Engineering from Gujarat Technological University, where I honed my skills in Machine Learning, Artificial Intelligence, and Software Embedded Systems.
+
+                    </p>
+                    <div class="about-btn">
+                        <a href="https://drive.google.com/file/d/10chXcFG5ZMLD4Z6yDsldq6kGDNvaylfv/view?usp=sharing" download target="_blank">
+                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <span>Vue</span>
+                        <span>React</span>
+                        <span>Angular</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>JAVA</span>
+                        <span>Python</span>
+                        <span>PHP</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Regression</span>
+                        <span>Classification</span>
+                        <span>Clustering</span>
+                        <span>PCA</span>
+                        <span>Hypothesis Testing</span>
+                        <span>Data Analysis</span>
+                        <span>Decision Modelling</span>
+                        <span>Generative AI</span>
+
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+          
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <!-- <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-briefcase-alt"></i>
+                <h3>Completed</h3>
+                <label>15+ Finished Projects</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>Clients</h3>
+                <label>25+ Happy Clients</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h3>Experience</h3>
+                <label>1+ Years in the field</label>
+            </div>
+          </div>
+       </section> -->
+
+       <!-- -------------- Experience BOX ---------------- -->
+
+<section class="section" id = "experience-box">
+    <div class="top-header">
+        <h1> </h1>
+        <p><h1>
+            <span style="color: rgb(68, 68, 68);">Experience</span> 
+            <span style="color: rgb(110, 87, 224);">1+ year</span>
+        </h1></p>
+    </div>
+    
+    <div class="experience">
+        <div class="title">Software Engineering Intern ( Feb 2023 – Jun 2023 )</div>
+        <div class="subtitle">@ Ordex Technology Solution Inc</div>
+        <div class="content"><ul>
+            <li>Enhanced microservice architecture Java application by modernizing REST APIs, leading to a 10% increase in feature delivery capacity.</li>
+            <li>Provided exceptional customer support by resolving 10 client tickets weekly using Jira, resulting in significantly improved client satisfaction.</li>
+            <li>Collaborated with a 4-person team to design and implement a CI/CD pipeline using Jenkins for automated build, testing, and deployment.</li>
+            <li>Leveraged debugging techniques and Postman to analyze and document a newly acquired live project, ensuring smooth integration.</li>
+          </ul></div>
+          <br><br>
+          <div class="title">Full Stack developer ( Jun 2021 – Jun 2022 )</div>
+        <div class="subtitle">@ Softvan Pvt Ltd</div>
+        <div class="content"><ul>
+            <li>Developed responsive user interfaces (UIs) leveraging React, HTML5, CSS3, and JavaScript, coupled with Java server-side logic, to optimize performance and drive user engagement.</li>
+            <li>Implemented best practices for code version control using Git, fostering efficient collaboration, and streamlined project management.</li>
+            <li>Spearheaded rigorous testing protocols, achieving a 99.9% success rate in identifying critical pre-launch issues, leading to a 50% reduction in post-deployment bugs</li>
+            <li>Designed and optimized relational databases, crafting efficient schemas and SQL queries to streamline data management and enhance the performance of data-driven applications.</li>
+          </ul></div>
+          <br><br>
+          <div class="title">Open-Source developer ( Jun 2021 – Jun 2022 )</div>
+        <div class="subtitle">@ GitHub - Police Data Trust</div>
+        <div class="content"><ul>
+            <li>Contributed to the project using TypeScript, Python Flask, Docker, and PostgreSQL to facilitate search end point API.</li>
+            <li>Developed unit tests for components and integration test for seamless module interactions, ensuring 100% automated testing.</li>
+            <li>Collaborated with project manager to understand project problems and delivered end point within tight deadline.</li>
+            
+          </ul></div>
+    </div>
+
+</section>
+
+
+<section class="section" id = "projects">
+    <div class="top-header">
+        <h1> </h1>
+        <p><h1>
+            <span style="color: rgb(68, 68, 68);">Projects</span> 
+            <span style="color: rgb(110, 87, 224);">10+</span>
+        </h1></p>
+    </div>
+    <div class ="project">
+        <div class="title">
+            <span style="color: rgb(68, 68, 68);">Text-to-SQL Generative AI with </span> 
+            <span style="color: rgb(87, 185, 224);">Google Gemini API</span>
+        </div>
+        <br>
+        <div class="project-icon">
+            
+            <a href="https://github.com/zeelapatel/TextToSqlGenerativeAI.git" target="_blank" style="text-decoration: none;">
+                Explore <i class="uil uil-github-alt"></i>
+            </a>
+        </div>
+        <div class="content">
+            <ul>
+            <li>Developed an NLP pipeline utilizing Google's Gemini for semantic analysis, enabling the conversion of unstructured text into structured SQL commands.</li>
+            <li>Engineered a user-friendly interface with Streamlit, enhancing user interaction and accessibility for the text-to-SQL model.</li>
+            <li>Integrated advanced natural language processing techniques to accurately interpret and generate SQL queries from natural language inputs.</li>
+            <li>Conducted rigorous A/B testing to optimize the performance and accuracy of the text-to-SQL conversion, resulting in a 15% improvement in conversion accuracy.</li>
+            </ul>
+            <br>
+            
+        </div>
+
+
+    </div>
+    
+    <!-- -------project 2-------- -->
+
+
+    <div class ="project">
+        <div class="title">
+            <span style="color: rgb(68, 68, 68);">Check It Out! Library</span> 
+            <span style="color: rgb(87, 185, 224);">Java, SpringBoot, React</span>
+        </div>
+        <br>
+        <div class="project-icon">
+            
+            <a href="https://github.com/zeelapatel/Check-It-Out-Library.git" target="_blank" style="text-decoration: none;">
+                Explore <i class="uil uil-github-alt"></i>
+            </a>
+        </div>
+        <div class="content">
+            <ul>
+            <li>Spearheaded team of 6-member guiding and distributing workflow, which increase productivity and teamwork by 100%.</li>
+            <li>Drafted a modular and scalable backend architecture using Java and Spring Boot, resulting in a 30% reduction in response time and a 20% increase in concurrent user capacity.</li>
+            <li>Leveraged microservices architecture, reducing downtime by 25% and enhancing system maintainability with a 40% decrease in time required for updates and feature additions.</li>
+            <li>Successfully deployed Spring applications on AWS EC2 instances, ensuring scalable hosting with high uptime.</li>
+            </ul>
+            <br>
+            
+        </div>
+        
+<!-- -------project 3-------- -->
+        <div class ="project">
+            <div class="title">
+                <span style="color: rgb(68, 68, 68);">Full-Stack Data Processing System </span> 
+                <span style="color: rgb(87, 185, 224);">AWS</span>
+            </div>
+            <br>
+            <div class="project-icon">
+                
+                <a href="https://github.com/zeelapatel/File-Uploader-AWS-.git" target="_blank" style="text-decoration: none;">
+                    Explore <i class="uil uil-github-alt"></i>
+                </a>
+            </div>
+            <div class="content">
+                <ul>
+                <li>Developed a responsive web UI using ReactJS and Tailwind CSS, featuring text and file input functionalities.</li>
+                <li>Ensured secure and compliant development by adhering to AWS best practices, including the use of AWS SDK JavaScript V3 for Lambda and AWS Cognito for API-Gateway authorization.</li>
+                <li>Implemented AWS CDK to manage AWS infrastructure, including S3 for file storage, DynamoDB for data persistence, and EC2 for script execution.</li>
+                
+                </ul>
+                <br>
+                
+            </div>
+        </div>
+<!-- -------------------project 4------------------- -->
+
+<div class ="project">
+    <div class="title">
+        <span style="color: rgb(68, 68, 68);">Real-estate Price Prediction </span> 
+        <span style="color: rgb(87, 185, 224);">Machine Learning</span>
+    </div>
+    <br>
+    <div class="project-icon">
+        
+        <a href="https://github.com/zeelapatel/File-Uploader-AWS-.git" target="_blank" style="text-decoration: none;">
+            Explore <i class="uil uil-github-alt"></i>
+        </a>
+    </div>
+    <div class="content">
+        <ul>
+        <li>Executed comprehensive data visualization using Matplotlib and Seaborn, providing insightful analyses and visual representations of real estate data trends.</li>
+        <li>Implemented feature engineering and scaling techniques, including Min-Max scaling and Standardization, to enhance machine learning model performance.</li>
+        <li>Applied one-hot encoding for categorical variables and utilized K-fold cross-validation, achieving an impressive 82% accuracy rate in predictive modeling.</li>
+        <li>Conducted extensive data cleaning and preprocessing, ensuring high-quality data for machine learning applications and predictive analysis.</li>
+        
+        </ul>
+        <br>
+        
+    </div>
+</div>
+
+<!-- -------------- project 5------------- -->
+
+<div class ="project">
+    <div class="title">
+        <span style="color: rgb(68, 68, 68);">Sales Insight Dashboard  </span> 
+        <span style="color: rgb(87, 185, 224);">Power BI</span>
+    </div>
+    <br>
+    <div class="project-icon">
+        
+        <a href="https://github.com/zeelapatel/File-Uploader-AWS-.git" target="_blank" style="text-decoration: none;">
+            Explore <i class="uil uil-github-alt"></i>
+        </a>
+    </div>
+    <div class="content">
+        <ul>
+        <li>Designed a dynamic Sales Insight Dashboard in Power BI, integrating data from over five sales channels, delivering a comprehensive view of sales performance and trends.</li>
+        <li>Developed interactive visualizations and drill-down capabilities in Power BI, increasing stakeholder engagement with sales data exploration by 20%.</li>
+        <li>Automated data refresh and scheduling processes in Power BI using DAX and Power Query, reducing manual update efforts by 70% and ensuring daily data accuracy.</li>
+        <li>Conducted advanced data analysis and mining to uncover critical sales insights, leveraging SQL and Power BI's analytical tools for strategic decision-making.</li>
+        
+        </ul>
+        <br>
+        
+    </div>
+</div>
+
+<!-- -----------------project 6-------------- -->
+
+<div class ="project">
+    <div class="title">
+        <span style="color: rgb(68, 68, 68);">Microservices Symphony   </span> 
+        <span style="color: rgb(87, 185, 224);">JAVA</span>
+    </div>
+    <br>
+    <div class="project-icon">
+        
+        <a href="https://github.com/zeelapatel/File-Uploader-AWS-.git" target="_blank" style="text-decoration: none;">
+            Explore <i class="uil uil-github-alt"></i>
+        </a>
+    </div>
+    <div class="content">
+        <ul>
+        <li>Designed an API Gateway using Spring Cloud Gateway, ensuring efficient and secure communication between microservices, reducing latency by 20% and enhancing security posture with a 15% reduction in vulnerabilities.</li>
+        <li>Implemented microservices security with Keycloak, Circuit Breaker, and Distributed Tracing, reducing downtime by 30% and enhancing scalability by 25% with optimized resource utilization.</li>
+        <li>Integrated Grafana dashboards for real-time system health visualization and improved troubleshooting.</li>
+        
+        </ul>
+        <br>
+        
+    </div>
+</div>
+
+
+
+<!-- ------------------preview-------------- -->
+
+
+        <div class="project-img-container">
+            <div class="project-gif" style="float: left;">
+            <img src="images\21.gif" alt="Description of GIF" class="preview" id="preview">
+            </div>
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+            </div>
+            <div class="project-gif"style="float: left;margin-left:4px;" >
+            <img src="images\21.gif" alt="Description of GIF"class="preview">
+            </div>
+            <div class="project-gif">
+                <img src="images\p3.png" alt="Description of GIF"class="preview">
+            </div>
+            <div class="project-gif">
+                <img src="images\powerbi.gif" alt="Description of GIF"class="preview">
+            </div>
+        </div>
+    </div>
+
+    
+
+</section>
+
+<section class="section" id="recomendation">
+    <div class="top-header">
+        <h1>Recomendation</h1>
+      </div>
+    <div class='sk-ww-linkedin-recommendations' data-embed-id='25415386'></div><script src='https://widgets.sociablekit.com/linkedin-recommendations/widget.js' async defer></script>
+</section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+        <div class="top-header">
+          <h1>Get in touch</h1>
+          <span>Do you have a project in your mind or want to collab, contact me here</span>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="contact-info">
+              <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+              <p><i class="uil uil-envelope"></i> Email: zeelpatel2754@gmail.com <i class="uil uil-copy copy-icon" data-copy="zeelpatel2754@gmail.com"></i></p>
+              <p><i class="uil uil-envelope"></i> Email: patel.zeel3@northeastern.edu <i class="uil uil-copy copy-icon" data-copy="patel.zeel3@northeastern.edu"></i></p>
+              <p><i class="uil uil-phone"></i> Tel: +1(857) 395 8816 <i class="uil uil-copy copy-icon" data-copy="+1(857) 395 8816"></i></p>
+              <div class="icon" style="background-color: antiquewhite;margin-top: 10px;">
+                <a href="https://www.linkedin.com/in/zeelapatel/" target="_blank">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+            </div>
+            </div>
+          </div>
+          <div class="col">
+            <form action="https://formspree.io/f/xqkrober" method="POST">
+              <div class="form-control">
+                <div class="form-inputs">
+                  <input type="text" class="input-field" name="name" placeholder="Name" required>
+                  <input type="email" class="input-field" name="email" placeholder="Email" required>
+                </div>
+                <div class="text-area">
+                  <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <div class="form-button">
+                  <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div id="floating-notification" class="floating-notification"></div>
+      
+
+
+
+       
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Zeel P.</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#experience-box">Experience</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#recomendation">Recomendation</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><i class="uil uil-instagram"></i></div>
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            <div class="icon"><i class="uil uil-dribbble"></i></div>
+            <div class="icon"><i class="uil uil-github-alt"></i></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Zeel Patel</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="css\js\main.js"></script>
+</body>
+</html>
