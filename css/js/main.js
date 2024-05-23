@@ -30,6 +30,21 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var projectLink = document.getElementById("projectLink");
+  var projectText = document.getElementById("projectText");
+
+  // Replace "projects" with "product"
+  projectLink.addEventListener("mouseover", function() {
+      projectText.innerHTML = "Ongoing product Do check!";
+  });
+
+  // Revert to "projects" when mouse leaves
+  projectLink.addEventListener("mouseleave", function() {
+      projectText.innerHTML = "Ongoing projects Do check!";
+  });
+});
+
 /* ----- NAVIGATION BAR FUNCTION ----- */
 
 
@@ -98,6 +113,13 @@ function showFloatingNotification(message) {
     backDelay : 2000
  })
 
+ var typingEffect = new Typed(".product1",{
+  strings : ["Products"],
+  loop : true,
+  typeSpeed : 100, 
+  backSpeed : 70,
+  backDelay : 2000
+})
 
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
  const sr = ScrollReveal({

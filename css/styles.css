@@ -17,7 +17,24 @@
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
 }
+.subtitle-btn {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
 
+@keyframes textChange {
+    0% { transform: scaleX(1); }
+    50% { transform: scaleX(0); }
+    51% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+}
+
+.subtitle-btn:hover {
+    animation: textChange 0.5s;
+}
+.startup{
+    color: var(--first-color);
+  }
 /* ----- BASE ----- */
 *{
     margin: 0;
