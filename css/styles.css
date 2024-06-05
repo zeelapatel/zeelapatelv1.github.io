@@ -216,6 +216,13 @@ nav{
     border-radius: 50%;
 }
 
+.technology_logo{
+    padding: 20px; 
+    margin: 20px auto;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
 
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
@@ -229,7 +236,13 @@ nav{
     height: 100vh;
     min-height: 700px;
 }
-
+.logo-hover{
+    transition: transform 0.5s; /* Smooth transition for the transform */
+    transform-style: preserve-3d; /* Preserve the 3D effect */
+}
+.logo-hover:hover{
+    transform: rotateY(20deg) rotateX(10deg) scale(1.1);
+}
 /* ----- FEATURED TEXT BOX ----- */
 .featured-text{
     position: relative;

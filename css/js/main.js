@@ -145,7 +145,7 @@ sr.reveal('.project-box',{interval: 200})
 sr.reveal('.top-header',{})
 sr.reveal('.experience',{})
 sr.reveal('.project',{})
-
+sr.reveal('.technology_logo',{})
 /* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
 
 /* -- ABOUT INFO & CONTACT INFO -- */
