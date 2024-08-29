@@ -557,6 +557,19 @@ h3{
     cursor: pointer;
     color: var(--first-color);
 }
+.aws-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 5px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 05px 5px rgba(15, 96, 159, 0.25);
+    cursor: pointer;
+    color: var(--first-color);
+}
 .project-img-container {
     display: flex;
     flex-wrap: wrap;
