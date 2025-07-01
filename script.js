@@ -424,4 +424,13 @@ function throttle(func, limit) {
 // Apply throttling to scroll events
 window.addEventListener('scroll', throttle(function() {
     // Any scroll-based animations can go here
-}, 16)); // ~60fps 
+}, 16)); // ~60fps
+
+// Resume download and view function
+function openAndDownloadResume(e) {
+    e.preventDefault();
+    // Open PDF in new tab for viewing
+    window.open('https://drive.google.com/file/d/16-ZjiRkbgpH8ylGvxN6pI-f0Tyt_X_DL/view?usp=sharing', '_blank');
+    // Trigger download in new tab
+    window.open('https://drive.google.com/uc?export=download&id=16-ZjiRkbgpH8ylGvxN6pI-f0Tyt_X_DL', '_blank');
+} 
