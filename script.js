@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeScrollAnimations();
     initializeContactForm();
     initializeMobileMenu();
+    initializeAIConsole();
 });
 
 // Navigation functionality
@@ -434,3 +435,47 @@ function openAndDownloadResume(e) {
     // Trigger download in new tab
     window.open('https://drive.google.com/uc?export=download&id=16-ZjiRkbgpH8ylGvxN6pI-f0Tyt_X_DL', '_blank');
 } 
+
+// AI Console boot sequence
+function initializeAIConsole() {
+    const container = document.getElementById('aiConsoleBody');
+    if (!container) return;
+
+    const lines = [
+        { text: '[BOOT] initializing LLM runtime...', cls: 'ai-line-dim' },
+        { text: '[OK] embeddings loaded: space-grotesk-v1 (Bedrock/amazon.titan)', cls: 'ai-line-pass' },
+        { text: '[OK] vector store online: HNSW(d=768, ef=128, recall~0.99)', cls: 'ai-line-pass' },
+        { text: '[RAG] chunker: semantic-sentences | retriever: MMR(k=8, lambda=0.3)', cls: 'ai-line-dim' },
+        { text: '[TOOLS] enabled: web, github, aws-s3, serp, code-runner', cls: 'ai-line-dim' },
+        { text: '[PIPELINE] Bedrock ↔ RAG ↔ reasoning ↔ function-calls', cls: 'ai-line-pass' },
+        { text: '[READY] Zeel.AI online — ask me about APIs, cloud, or ML 👋', cls: '' }
+    ];
+
+    typeLines(container, lines, 0);
+}
+
+function typeLines(container, lines, index) {
+    if (index >= lines.length) {
+        const cursor = document.createElement('span');
+        cursor.className = 'ai-cursor';
+        container.appendChild(document.createTextNode('\n$ '));
+        container.appendChild(cursor);
+        return;
+    }
+
+    const { text, cls } = lines[index];
+    const line = document.createElement('div');
+    if (cls) line.className = cls;
+    container.appendChild(line);
+
+    let i = 0;
+    const speed = 8 + Math.random() * 14; // slightly faster typing
+    const interval = setInterval(() => {
+        line.textContent = text.slice(0, i++);
+        container.scrollTop = container.scrollHeight;
+        if (i > text.length) {
+            clearInterval(interval);
+            setTimeout(() => typeLines(container, lines, index + 1), 250);
+        }
+    }, speed);
+}
